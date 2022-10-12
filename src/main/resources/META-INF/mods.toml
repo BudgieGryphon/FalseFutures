@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="MIT"
+
+[[mods]]
+modId="falsefutures"
+version="1.0"
+displayName="False Futures"
+logoFile="gelatin.png"
+
+credits="Thanks for this example mod goes to Java" 
+authors="Team Jelly"
+
+description='''
+A mod that adds multiple creatures that were originally created as hoax Minecraft leaks.
+'''
+
+[[dependencies.falsefutures]] 
+    modId="forge" 
+    mandatory=true 
+    versionRange="[43,)"
+    ordering="NONE"
+    side="BOTH"
+
