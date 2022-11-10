@@ -1,5 +1,7 @@
-package com.example.examplemod;
+package com.budgiegryphon.falsefutures;
 
+import com.budgiegryphon.falsefutures.core.init.FFBlockInit;
+import com.budgiegryphon.falsefutures.core.init.FFItemInit;
 import com.mojang.logging.LogUtils;
 
 import net.minecraftforge.common.MinecraftForge;
@@ -19,6 +21,8 @@ public class FalseFutures
 
     public FalseFutures() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        FFItemInit.ITEMS.register(modEventBus);
+        FFBlockInit.BLOCKS.register(modEventBus);
         
         GeckoLib.initialize();
 
